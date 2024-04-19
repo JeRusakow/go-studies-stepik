@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	var name = "NONE"
-	fmt.Scanf("%s", name)
+	var name = "World"
 	fmt.Printf("Hello, %s", name)
 }
