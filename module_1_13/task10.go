@@ -13,7 +13,10 @@ func main() {
 	for ; b >= a; b-- {
 		if b%7 == 0 {
 			fmt.Println(b)
-			break
+			return
 		}
 	}
+
+	fmt.Println("NO")
+
 }
