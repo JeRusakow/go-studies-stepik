@@ -14,11 +14,13 @@ func main() {
 		fmt.Scan(&a)
 		array[i] = a
 	}
-	var max int
+
+	max := array[0]
 	for _, elem := range array {
 		if elem > max {
 			max = elem
 		}
 	}
+
 	fmt.Println(max)
 }
