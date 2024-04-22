@@ -17,11 +17,11 @@ func main() {
 func digital_root(a int64) int64 {
 	if a < 10 {
 		return a
-	} else {
-		var sum int64
-		for ; a > 0; a /= 10 {
-			sum += a % 10
-		}
-		return digital_root(sum)
 	}
+	var sum int64
+	for ; a > 0; a /= 10 {
+		sum += a % 10
+	}
+	return digital_root(sum)
+
 }
