@@ -15,7 +15,7 @@ func main() {
 		fmt.Scan(&slice[i])
 	}
 
-	for i := 0; i < n/2; i++ {
-		fmt.Println(slice[i*2])
+	for i := 0; i < n; i += 2 {
+		fmt.Printf("%d ", slice[i])
 	}
 }
