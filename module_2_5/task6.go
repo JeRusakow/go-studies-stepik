@@ -15,6 +15,11 @@ func main() {
 
 	runes := []rune(password)
 
+	if len(runes) < 5 {
+		fmt.Println("Wrong password")
+		return
+	}
+
 	for _, symb := range runes {
 		if !(unicode.Is(unicode.Latin, symb) || unicode.Is(unicode.Digit, symb)) {
 			fmt.Println("Wrong password")
